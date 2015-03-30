@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svnroot/eresye/!svn/ver/4/trunk/src
+END
+eresye_ontology.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/eresye/!svn/ver/5/trunk/src/eresye_ontology.erl
+END
+eresye_tree_list.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/eresye/!svn/ver/5/trunk/src/eresye_tree_list.erl
+END
+eresye_ontology_resolver.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/eresye/!svn/ver/5/trunk/src/eresye_ontology_resolver.erl
+END
+eresye_agenda.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/eresye/!svn/ver/5/trunk/src/eresye_agenda.erl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/eresye/!svn/ver/2/trunk/src/Makefile
+END
+eresye.erl
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/eresye/!svn/ver/5/trunk/src/eresye.erl
+END

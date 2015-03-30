@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/eresye/!svn/ver/4/trunk/examples
+END
+relatives.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/eresye/!svn/ver/5/trunk/examples/relatives.erl
+END
+wine.onto
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/eresye/!svn/ver/5/trunk/examples/wine.onto
+END
+wine.erl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/eresye/!svn/ver/2/trunk/examples/wine.erl
+END
+wine_sample.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/eresye/!svn/ver/5/trunk/examples/wine_sample.erl
+END
+wine.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/eresye/!svn/ver/2/trunk/examples/wine.hrl
+END
+journal.onto
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/eresye/!svn/ver/5/trunk/examples/journal.onto
+END
+auto.erl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/eresye/!svn/ver/5/trunk/examples/auto.erl
+END
+journal.erl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/eresye/!svn/ver/2/trunk/examples/journal.erl
+END
+journal_sample.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/eresye/!svn/ver/5/trunk/examples/journal_sample.erl
+END
+sieve.erl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/eresye/!svn/ver/5/trunk/examples/sieve.erl
+END
+journal.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/eresye/!svn/ver/2/trunk/examples/journal.hrl
+END
+sample.erl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/eresye/!svn/ver/5/trunk/examples/sample.erl
+END
+sample.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/eresye/!svn/ver/5/trunk/examples/sample.hrl
+END
+prodcons.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/eresye/!svn/ver/5/trunk/examples/prodcons.erl
+END
+cannibals.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/eresye/!svn/ver/5/trunk/examples/cannibals.erl
+END
+phil.erl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/eresye/!svn/ver/5/trunk/examples/phil.erl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/eresye/!svn/ver/2/trunk/examples/Makefile
+END
