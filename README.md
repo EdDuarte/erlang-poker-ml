@@ -73,7 +73,7 @@ The history module is a data history, implemented using an alternative Eresye en
 
 The data in storage is structured as:
 
-- {round_number, current_ranked_hand, previous_round_ranked_hand, number_of_occurrences}: assuming R as the current round and R as the next round, we can calculate the probability of obtaining a ranked hand Y knowing that the user currently has a ranked hand X;
+- {round_number, current_ranked_hand, previous_round_ranked_hand, number_of_occurrences}: the number of times the user had a ranked hand Y knowing that he/she had a ranked hand X on a previous hand (where Rank(Y) >= Rank(X));
 
 - {won/lost, current_ranked_hand, number_of_occurrences}: the number of times the user won or lost with a specific ranked hand;
 
