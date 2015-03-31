@@ -33,7 +33,7 @@ reset() ->
     menu(InitialPot, 0, 0, 1).
 
 clear() ->
-    eresye:stop(main), % clears the KB for a new game
+    eresye:stop(main), % clears the KB for a new match
     eresye:start(main),
     lists:foreach(fun(X) -> eresye:add_rule(main, {?MODULE, X}) end,
     [
@@ -146,7 +146,7 @@ addHistory(RoundNo) ->
 
 addHistoryFinal() ->
     [addHandToHistory(RoundNo, CurrentHand, LastHand) || {history, RoundNo, CurrentHand, LastHand} <- eresye:query_kb(main, {history, '_', '_', '_'}), RoundNo=/=0],
-    incrementNumberOfGames().
+    incrementNumberOfMatches().
 
 getCurrentHands() ->
     HandList = eresye:query_kb(main, {hand, '_'}),
@@ -465,8 +465,8 @@ saveStorage(File, List) ->
 
 
 %% ::::::::::::::::::::::::::::: Addition ::::::::::::::::::::::::::::
-% Increments the total amount of games played
-incrementNumberOfGames() ->
+% Increments the total amount of matches played
+incrementNumberOfMatches() ->
     case (eresye:query_kb(history, {total, '_'})) of
         [{_, Num}] ->
             eresye:retract(history, {total, Num}),
@@ -511,7 +511,7 @@ addAux(A, B) ->
 
 
 %% :::::::::::::::::::::::::::: Retrieval :::::::::::::::::::::::::::
-% Retrieves the total number of finished games recorded
+% Retrieves the total number of finished matches recorded
 getTotal() ->
     % length([B || {A, B, _} <- eresye:get_kb(history), A=:=won orelse A=:=lost]).
     [{total, Num}] = eresye:query_kb(history, {total, '_'}),
