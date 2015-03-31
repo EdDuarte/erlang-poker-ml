@@ -54,11 +54,13 @@ Because the probability of winning (PWin) varies according to the user's hand an
 ![Formula 1](/img/formula1.png?raw=true "Expected profit on Raise")
 
 ![Formula 2](/img/formula2.png?raw=true "Expected profit on Fold")
-where BetsDoneByPlayer is the total value of bets done by the user to that point, or in other words, the number of chips the user placed in the pot.
 
 ![Formula 3](/img/formula2.png?raw=true "Expected profit on Call")
 
+BetsDoneByPlayer is the total value of bets done by the user to that point, or in other words, the number of chips the user placed in the pot.
+
 PWin can be calculated using the History module and its Bayesian network (see below), where we can obtain the number of victories attained with the CurrentHand, but also the possible hands that can be obtained in future rounds knowing the CurrentHand. So:
+
 ![Formula 4](/img/pwin.png?raw=true "PWin")
 
 Once all of the expected profits are calculated, the action that the user should take corresponds to the one that has the higher expected profit.
@@ -84,8 +86,9 @@ The prediction of outcomes is based on conditional probabilities per round. For 
 - Round 1 = Pair
 - Round 2 = Pair
 - Round 3 = Two Pair
+
 ... the conditional probability for each round is calculated as follows, in pseudo-code:
-- Total = query(total, '_')
+- Total = query(total, _)
 - Round 0 -> P(Pair | HighCard) = query(round1, pair, highCard, _) / Total
 - Round 1 -> P(Pair | Pair) = query(round2, pair, pair, _) / Total
 - Round 2 -> P(TwoPair | Pair) = query(round3, twoPair, pair, _) / Total
