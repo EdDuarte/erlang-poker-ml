@@ -55,7 +55,7 @@ Because the probability of winning (PWin) varies according to the user's hand an
 
 ![Formula 2](/img/formula2.png?raw=true "Expected profit on Fold")
 
-![Formula 3](/img/formula2.png?raw=true "Expected profit on Call")
+![Formula 3](/img/formula3.png?raw=true "Expected profit on Call")
 
 BetsDoneByPlayer is the total value of bets done by the user to that point, or in other words, the number of chips the user placed in the pot.
 
