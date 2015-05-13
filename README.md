@@ -3,9 +3,9 @@
 
 This is an application developed in Erlang that uses statistical data collected over time to predict outcomes in Texas Hold'em matches.
 
-It works by prompting the user to fill the card in hand and table for each round, and whenever the user won or lost each match. This information is stored to a local file, and the probabilities of occurrence for each card per round, along with the probability of winning or losing the match with the current cards, are recalculated at the end of every match and organized into a Decision tree. At each round, the probability of getting a good hand and win the match is read from the Decision tree and printed to the user, suggesting him to either raise, call or fold.
+It works by prompting the user to fill the card in his/her hand and table for each round, and whenever the user won or lost each match. This information is stored on a local file, and the probabilities of occurrence for each card per round, along with the probability of winning or losing the match with the current cards, are recalculated at the end of every match and organized into a Decision tree. At each round, the probability of getting a good hand and win the match is read from the Decision tree and printed to the user, suggesting him to either raise, call or fold.
 
-The application is implemented in the file 'poker.erl'. A trained model containing the history of matches and ranked hands is also provided as the 'storage' file, so you can test the application with more accurate predictions than the ones obtained from an empty history.
+The application is implemented in the file 'poker.erl'. A trained model containing the history of matches and ranked hands is also provided ('storage' file), so you can start testing the application immediately.
 
 This application is separated in three modules:
 - a main module, which uses [Eresye](http://sourceforge.net/projects/eresye/), a rule-based knowledge management engine, to store Texas Hold'em rules and hand rankings;
@@ -14,16 +14,16 @@ This application is separated in three modules:
 
 ## Preliminaries
 
-A match is considered a result of seven cards that occurred throughout four rounds. A ranked hand is a specific set of cards that have a specific rank, namely: 1. Royal Flush; 2. Straight Flush; 3. Four Of A Kind; 4. Full House; 5. Flush; 6. Straight; 7. Three Of A Kind; 8. Two Pair; 9. Pair; 10. High Card.
-
-The four rounds are numbered from 0 to 3:
+A match is considered a result of seven cards that occurred throughout four rounds. The four rounds are numbered from 0 to 3:
 - Round 0: when the user is given 2 cards
 - Round 1: when the first, second and third cards on the table are shown
 - Round 2: when the fourth card on the table is shown
 - Round 3: when the fifth card on the table is shown
 
-With this, we consider that is possible to raise, call or fold between the four rounds, hence, three phases of betting.
+We consider that is possible to raise, call or fold between the four rounds, hence, three phases of betting.
 In this implementation, draws / split results are not considered, so as to not influence the collected probabilities of winning or losing by reducing both.
+
+A ranked hand is a specific set of cards that have an associated rank, namely: 1. Royal Flush; 2. Straight Flush; 3. Four Of A Kind; 4. Full House; 5. Flush; 6. Straight; 7. Three Of A Kind; 8. Two Pair; 9. Pair; 10. High Card.
 
 ## Main module
 
@@ -38,7 +38,7 @@ Some additional inputs can be used at any time:
 
 The current match data is only committed to history at the end of the match, so a "reset" will discard the current match.
 
-When prompting for a card, two inputs are required: the suit and the value. Inputted cards are then structured as {card, ID, Suit, Value} and compared with ranked hands in Eresye. The ID value is randomly attributed using the method 'random:uniform()', and is used to ensure that the card will not be compared with itself during comparisons with Eresye's rules.
+When prompting for a card, two inputs are required: the suit and the value. Inputted cards are then structured as {card, ID, Suit, Value} and compared with ranked hands in Eresye. The ID value is randomly attributed using the method 'random:uniform()', and is used to ensure that the card will not be compared with itself during Eresye's operations.
 
 
 
